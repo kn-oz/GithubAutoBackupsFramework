@@ -35,7 +35,7 @@ jobs:
       - name: Add backup remote
         run: |
           echo "Adding remote backup repository"
-          git remote add backup https://${{ secrets.PAT }}@github.com/kn-oz/backupfilesAPITEAM3.git
+          git remote add backup https://${{ secrets.PAT }}@github.com/[username]/[Back up Repo target]
           git remote -v  # List remotes to verify
 
       - name: Pull changes from backup repository
